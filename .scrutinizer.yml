@@ -4,6 +4,8 @@ filter:
 
 checks:
     php:
+        code_rating: true
+        duplication: true
         verify_property_names: true
         verify_argument_usable_as_reference: true
         verify_access_scope_valid: true
