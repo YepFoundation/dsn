@@ -5,7 +5,7 @@
 [![Total Downloads](https://poser.pugx.org/yep/dsn/downloads)](https://packagist.org/packages/yep/dsn)
 [![License](https://poser.pugx.org/yep/dsn/license)](https://github.com/YepFoundation/dsn/blob/master/LICENSE.md)
 
-# Dsn ([docs](http://yepfoundation.github.io/dsn))
+# Dsn
 
 ## Packagist
 Dsn is available on [Packagist.org](https://packagist.org/packages/yep/dsn),
