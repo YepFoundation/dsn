@@ -32,7 +32,7 @@ $dsn = new Yep\Dsn\MySqlDsn(
 
 echo $dsn->toString(); // mysql:host=localhost;dbname=database;port=3306
 // or
-echo $dsn;
+echo $dsn; // mysql:host=localhost;dbname=database;port=3306
 
 // Usage with PDO
 $pdo = new PDO($dsn, 'root');
