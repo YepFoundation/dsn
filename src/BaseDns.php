@@ -12,7 +12,7 @@ namespace Yep\Dsn;
  * @package Yep\Dsn
  * @author  Martin Zeman (Zemistr) <me@zemistr.eu>
  */
-abstract class BaseDns {
+abstract class BaseDns implements IDsn {
   /** @var string */
   protected $dbName;
 
@@ -86,5 +86,12 @@ abstract class BaseDns {
    */
   public function getPort() : int {
     return $this->port;
+  }
+
+  /**
+   * @return string
+   */
+  public function __toString() : string {
+    return $this->toString();
   }
 }

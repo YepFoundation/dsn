@@ -19,6 +19,7 @@ class PostgreSqlDsnTest extends \PHPUnit_Framework_TestCase {
   public function testAll() {
     $dsn = new PostgreSqlDsn('foo', 'server.local', 5432);
     $this->assertSame('pgsql:host=server.local;dbname=foo;port=5432', $dsn->toString());
+    $this->assertSame('pgsql:host=server.local;dbname=foo;port=5432', "$dsn");
 
     $this->assertSame('foo', $dsn->getDbName());
     $this->assertSame('server.local', $dsn->getHost());

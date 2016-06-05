@@ -24,7 +24,16 @@ You can use `MySqlDsn`, `MySqlUnixSocketDsn`, `PostgreSqlDsn`, `Sqlite2Dsn` or `
 
 ```php
 <?php
-$dsn = new Yep\Dsn\MySqlDsn($dbName = 'database', $host = 'localhost', $port = 3306);
+$dsn = new Yep\Dsn\MySqlDsn(
+  $dbName = 'database',
+  $host = 'localhost',
+  $port = 3306
+);
 
 echo $dsn->toString(); // mysql:host=localhost;dbname=database;port=3306
+// or
+echo $dsn;
+
+// Usage with PDO
+$pdo = new PDO($dsn, 'root');
 ```

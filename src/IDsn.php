@@ -14,6 +14,8 @@ namespace Yep\Dsn;
  */
 interface IDsn {
   public function toString() : string;
+
+  public function __toString() : string;
 }
 
 /*

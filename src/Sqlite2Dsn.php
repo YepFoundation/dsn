@@ -17,6 +17,9 @@ namespace Yep\Dsn;
  * sqlite2:/opt/databases/mydb.sq2
  */
 class Sqlite2Dsn extends SqliteDsn {
+  /**
+   * @return string
+   */
   public function toString() : string {
     return 'sqlite2:' . $this->getPath();
   }

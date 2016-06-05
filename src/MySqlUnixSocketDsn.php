@@ -71,7 +71,17 @@ class MySqlUnixSocketDsn implements IDsn {
     return $this->dbName;
   }
 
+  /**
+   * @return string
+   */
   public function toString() : string {
     return 'mysql:unix_socket=' . $this->getUnixSocket() . ';dbname=' . $this->getDbName();
+  }
+
+  /**
+   * @return string
+   */
+  public function __toString() : string {
+    return $this->toString();
   }
 }

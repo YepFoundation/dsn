@@ -19,6 +19,7 @@ class MySqlDsnTest extends \PHPUnit_Framework_TestCase {
   public function testAll() {
     $dsn = new MySqlDsn('foo', 'server.local', 3307);
     $this->assertSame('mysql:host=server.local;dbname=foo;port=3307', $dsn->toString());
+    $this->assertSame('mysql:host=server.local;dbname=foo;port=3307', "$dsn");
 
     $this->assertSame('foo', $dsn->getDbName());
     $this->assertSame('server.local', $dsn->getHost());

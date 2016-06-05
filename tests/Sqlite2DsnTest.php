@@ -18,6 +18,7 @@ class Sqlite2DsnTest extends \PHPUnit_Framework_TestCase {
   public function testAll() {
     $dsn = new Sqlite2Dsn();
     $this->assertSame('sqlite2::memory:', $dsn->toString());
+    $this->assertSame('sqlite2::memory:', "$dsn");
 
     $this->assertSame(':memory:', $dsn->getPath());
 

@@ -17,6 +17,7 @@ class MySqlUnixSocketDsnTest extends \PHPUnit_Framework_TestCase {
   public function testAll() {
     $dsn = new MySqlUnixSocketDsn('socket', 'database');
     $this->assertSame('mysql:unix_socket=socket;dbname=database', $dsn->toString());
+    $this->assertSame('mysql:unix_socket=socket;dbname=database', "$dsn");
 
     $this->assertSame('socket', $dsn->getUnixSocket());
     $this->assertSame('database', $dsn->getDbName());

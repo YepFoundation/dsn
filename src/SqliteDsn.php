@@ -46,7 +46,17 @@ class SqliteDsn implements IDsn {
     return $this->path;
   }
 
+  /**
+   * @return string
+   */
   public function toString() : string {
     return 'sqlite:' . $this->getPath();
+  }
+
+  /**
+   * @return string
+   */
+  public function __toString() : string {
+    return $this->toString();
   }
 }
