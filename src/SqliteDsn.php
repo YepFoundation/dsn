@@ -14,7 +14,7 @@ namespace Yep\Dsn;
  *
  * PDO_SQLITE
  * sqlite::memory:
- * sqlite:/opt/databases/mydb.sq3
+ * sqlite:/opt/databases/mydb.sqlite3
  */
 class SqliteDsn implements IDsn {
   /** @var string */

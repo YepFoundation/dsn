@@ -14,7 +14,7 @@ namespace Yep\Dsn;
  *
  * PDO_SQLITE
  * sqlite2::memory:
- * sqlite2:/opt/databases/mydb.sq2
+ * sqlite2:/opt/databases/mydb.sqlite2
  */
 class Sqlite2Dsn extends SqliteDsn {
   /**
